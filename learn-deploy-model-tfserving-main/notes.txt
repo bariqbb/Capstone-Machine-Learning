@@ -1,0 +1,16 @@
+# Locally
+- Build by execute:
+docker build -t antuk:v1 -f ./Dockerfile .
+
+Note: adjust kertas-batu-gunting with your app name (must be same in Dockerfile)
+
+- Run by execute:
+docker run -p 8080:8501 -t antuk:v1
+
+Check the result with:
+http://localhost:8080/v1/antuk/metadata
+
+
+# GCP
+- [GUI] You can using Cloud Build in GCP
+- [CLI] or using gcloud cli (need setup first, we don't cover it yet)
